@@ -1,0 +1,174 @@
+page{
+  background: rgb(239,241,244);
+  /* background-image: url("https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/1.png?sign=fb6dee073654afcbffeeb5142951ea14&t=1596268979");
+  background-size: 100%;
+  background-repeat: no-repeat; */
+}
+.logo{
+  margin-left: 25rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+.logo image{
+  width: 130rpx;
+}
+.card-1{
+  background: white;
+  text-align: center;
+  align-items: center;
+  margin: 10rpx 25rpx 40rpx;
+  padding: 40rpx 0;
+  border-radius: 18rpx;
+  box-shadow: 0rpx 4rpx 8rpx rgb(231,231,231);
+}
+.card-1 .time{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25rpx;
+  font-size: 35rpx;
+}
+.card-1 .van-divider{
+  text-align: center;
+  padding:0 25rpx;
+  box-sizing: border-box;
+}
+.card-1 .new_notes{
+  font-size: large;
+  border-radius: 50rpx;
+  margin:0 50rpx;
+  background: rgb(100,166,214);
+  border: 1px solid rgb(100,166,214);
+  color:white;
+  padding: 18rpx 0;
+  box-sizing: border-box;
+  letter-spacing: 5rpx;
+  font-weight: 550;
+}
+.card-2{
+  background: white;
+  align-items: center;
+  margin: 40rpx 25rpx;
+  padding: 30rpx 0 40rpx;
+  border-radius: 18rpx;
+  box-shadow: 0rpx 2rpx 10rpx 7rpx rgb(231,231,231);
+}
+.card-2 .box-1{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 27rpx;
+}
+.card-2 .box-1 .title{
+  padding-left: 25rpx;
+  font-size: 35rpx;
+}
+.card-2 .box-1 .more{
+  font-size: 32rpx;
+  color: rgb(100,166,214);
+}
+.card-2 .van-divider{
+  text-align: center;
+  padding:0 25rpx;
+  box-sizing: border-box;
+}
+.card-2 .box{
+  padding-left: 50rpx;
+}
+.card-2 .box .gold .tit{
+  margin: 20rpx 0;
+  position: relative;
+}
+.card-2 .box .gold .tit::before{
+  display: block;
+  width: 7rpx;
+  height: 40rpx;
+  background:rgb(100,166,214);
+  border:1rpx solid rgb(100,166,214);
+  content: "";
+  position: absolute;
+  left: -27rpx;
+  top: 50%;
+  margin-top: -20rpx;
+  border-radius: 25rpx;
+}
+.card-2 .box .now .tit{
+  margin: 20rpx 0 ;
+  position: relative;
+}
+.card-2 .box .now .tit::before{
+  display: block;
+  width: 7rpx;
+  height: 40rpx;
+  background:rgb(100,166,214);
+  border:1rpx solid rgb(100,166,214);
+  content: "";
+  position: absolute;
+  left: -27rpx;
+  top: 50%;
+  margin-top: -20rpx;
+  border-radius: 25rpx;
+}
+.card-2 .txt{
+  padding: 10rpx 0 5rpx 20rpx;
+}
+.card-2 .txt view{
+  margin-bottom: 17rpx;
+  font-size: 32rpx;
+  color: rgb(27, 27, 27);
+}
+.card-2 .txt .tips{
+  padding-top: 10rpx;
+  font-size: 31rpx;
+  color: rgb(165, 165, 165);
+}
+.card-3{
+  background: white;
+  align-items: center;
+  margin: 40rpx 25rpx;
+  padding: 30rpx 0 40rpx;
+  border-radius: 18rpx;
+  box-shadow: 0rpx 2rpx 10rpx 7rpx rgb(231,231,231);
+}
+.card-3 .title{
+  padding-left: 42rpx;
+  font-size: 35rpx;
+  position: relative;
+}
+.card-3 .title::before{
+  display: block;
+  width: 7rpx;
+  height: 40rpx;
+  background:rgb(100,166,214);
+  border:1rpx solid rgb(100,166,214);
+  content: "";
+  position: absolute;
+  left: 20rpx;
+  top: 50%;
+  margin-top: -20rpx;
+  border-radius: 25rpx;
+}
+.card-3 .van-divider{
+  text-align: center;
+  padding:0 25rpx;
+  box-sizing: border-box;
+}
+.card-3 .box{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 27rpx;
+}
+.card-3 .box .more{
+  font-size: 32rpx;
+  color: rgb(100,166,214);
+}
+.card-3 .main{
+  padding:8rpx 30rpx 18rpx;
+}
+.card-3 .main .tit{
+  font-size: 32rpx;
+  line-height: 50rpx;
+}
+.card-3 .main .time{
+  padding-top: 25rpx;
+  font-size: 28rpx;
+  color: rgb(145,145, 145);
+}

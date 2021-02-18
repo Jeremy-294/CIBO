@@ -1,0 +1,16 @@
+page{
+  background:rgb(253,253,253);
+}
+.tit{
+  color: #b3b3b3;
+  font-size: 32rpx;
+  margin: 60rpx 38rpx 40rpx;
+}
+.van-button{
+  border-radius: 15rpx;
+}
+.btn{
+  width: 400rpx;
+  padding-top: 200rpx;
+  margin: auto;
+}

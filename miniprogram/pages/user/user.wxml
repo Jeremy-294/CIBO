@@ -1,0 +1,84 @@
+<!-- logo -->
+<view class="logo"><image src="https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/logo.png?sign=1e65559eee3bf9d136113837551802ac&t=1596858227" mode="widthFix"></image></view>
+
+<!-- 星球播报与用户授权 -->
+<view class="title">星球播报</view>
+<swiper class="main" circular previous-margin="50rpx" next-margin="50rpx">
+
+  <!-- 用户授权 -->
+  <swiper-item>
+    <view class="card-1">
+      <view class="userinfo">
+        <block wx:if="{{!hasUserInfo && canIUse}}">
+        <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 用户授权登录 </button>
+        <image class="userinfo-avatar" src="../../images/head.png" mode="cover"></image> 
+        </block>
+
+        <block wx:else>
+          <text class="userinfo-nickname">Hello {{userInfo.nickName}}\n欢迎你的到来 ~</text>
+          <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>  
+        </block>
+      </view>
+    </view>
+  </swiper-item>
+
+  <!-- 星球 -->
+  <swiper-item><view class="card-2">
+  <image mode="widthFix" src="/images/star2.png"></image>
+  <view>学习时也要喝热水噢！<text id="t1">\n\n水是生命之源 -_-</text></view>
+  </view></swiper-item>
+
+  <swiper-item><view class="card-2">
+  <image mode="widthFix" src="/images/star1.png"></image>
+  <view>加油！一起拿奖学金！<text id="t2">\n\n努力的你一定可以！</text></view>
+  </view></swiper-item>
+
+  <swiper-item><view class="card-2">
+  <image mode="widthFix" src="/images/star.png"></image>
+  <view>每天运动一小时 ~<text id="t3">\n\n健康生活一辈子^_^</text></view>
+  </view></swiper-item>
+</swiper>
+
+
+<!-- 帮助文档 -->
+<view class="title">帮助文档</view>
+<view class="card-3">
+   <!-- main -->
+   <view class="box">
+      <!-- 目标 -->
+      <view class="gold">
+        <view class="tit">帮助</view>
+        <view class="txt">
+          <view class="box-1">有问题请 
+            <view class="kefu">
+              <button class="btn" open-type="contact"></button>
+              <text id="kefu">咨询客服</text>
+            </view>
+          </view>
+          <view>修复 bug 请留言</view>   
+        </view>
+      </view>
+      <van-divider hairline />
+      <!-- 现状 -->
+      <view class="now">
+        <view class="tit">关于开发</view>
+        <view class="txt">
+          <view>开发者： 冈坂日川</view> 
+          <view>Bug更新： 进行中</view>
+          <!-- tips -->
+          <view id="tips">感谢您对本产品的支持，祝您生活愉快!</view>
+        </view>
+      </view>
+   </view>
+</view>
+
+<!-- 用户协议与隐私政策 -->
+<view class="bottom-box">使用前请阅读
+  <view>
+    <navigator url="../yonghu/yonghu">用户协议</navigator>
+  </view>和 
+  <view>
+    <navigator url="../yinsi/yinsi">隐私政策</navigator>
+  </view>
+</view>
+

@@ -1,0 +1,115 @@
+<van-tabs active="{{ active }}" bind:change="onChange" border="{{false}}" swipeable="{{true}}" 
+active="学习" sticky color="#64A6D6" tab-class="a">
+<!-- 学习页面 -->
+<van-tab title="学习" name="学习">
+  <swiper  class="main" autoplay interval="5000" circular indicator-dots
+    indicator-active-color="rgb(255,255,255)">
+      <swiper-item><view class="card-1">
+      <image mode="widthFix" src="https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/2.png?sign=4de407ec6a7aa86656f64b5f87e1d2e6&t=1596863602"></image>
+      </view></swiper-item>
+
+      <swiper-item><view class="card-1">
+      <image mode="widthFix" src="https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/1.png?sign=7461e2aefecd49b923e8596f31bafc8f&t=1596863586"></image>
+      </view></swiper-item>
+
+      <swiper-item><view class="card-1">
+      <image mode="widthFix" src="https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/3.png?sign=a17f0290ed4523077f956b233a37009f&t=1596863611"></image>
+      </view></swiper-item>
+  </swiper>
+
+  <!-- 抬头 -->
+  <view class="tags">
+      <view class="tit">学术文章</view>
+  </view>
+
+  <!-- 文章阅览处 -->
+    <view class="blog">
+      <view wx:for="{{dataArr}}"  wx:key="index" id="{{item._id}}" bindtap="getID1" class="card-2">
+        <view class="box">
+          <image class="head" src="{{item.avatarUrl}}"></image>
+          <view>{{item.author}}</view>
+          <!-- <view id="date">{{item.time}}</view> -->
+        </view>
+        <view class="title">{{item.title}}
+        </view>
+        <view class="txt">
+          <view wx:if="{{item.content.length > 17}}">
+          {{item.content[0]+item.content[1]+item.content[2]+item.content[3]+item.content[4]+item.content[5]+item.content[6]+item.content[7]+item.content[8]+item.content[9]+item.content[10]+item.content[11]+item.content[12]+item.content[13]+item.content[14]+item.content[15]+item.content[16]+item.content[17]}}..
+          </view>
+          <view wx:else>{{item.content}}</view>
+        </view>
+        <view class="box-2">
+          <navigator class="like"><image src="/images/like.png"  mode="widthFix"></image>{{item.like}}</navigator>
+          <navigator class="comment"><image src="/images/comment.png" mode="widthFix"></image>{{item.comment}}</navigator>
+        </view>
+      </view>
+    </view>
+
+     <!-- 文章发表按钮 -->
+  <navigator class="round-click" url="../../pages/addStu/addStu">
+    <image src="/images/create.png"  mode="widthFix"></image>
+  </navigator>
+
+
+  </van-tab>
+
+ 
+
+
+
+
+
+
+
+
+<!-- Blink页面 -->
+<van-tab title="Blink" name="Blink">
+   <swiper  class="main" autoplay interval="5000" circular indicator-dots indicator-active-color="rgb(255,255,255)">
+      <swiper-item><view class="card-1">
+      <image mode="widthFix" src="https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/1.png?sign=7ae4c41ea463d4cf6e7e8f4eb154a537&t=1596863665"></image>
+      </view></swiper-item>
+
+      <swiper-item><view class="card-1">
+      <image mode="widthFix" src="https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/2.png?sign=a2561ade384096121094df5095e53958&t=1596863655"></image>
+      </view></swiper-item>
+
+      <swiper-item><view class="card-1">
+      <image mode="widthFix" src="https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/3.png?sign=1d1c73bae6208a2174a0179d060f4120&t=1596698391"></image>
+      </view></swiper-item>
+  </swiper>
+
+  <!-- 抬头 -->
+  <view class="tags">
+    <view class="tit">论坛社区</view>
+  </view>
+
+  <!-- 文章发表处 -->
+  <view class="blog">
+    <view wx:for="{{dataArr2}}"  wx:key="index" class="card-2" bindtap="getID2"
+    id="{{item._id}}" >
+      <view class="box">
+        <image class="head" src="{{item.avatarUrl}}"></image>
+        <view >{{item.author}}</view>
+        <!-- <view id="date">{{item.time}}</view> -->
+      </view>
+      <view class="title">{{item.title}}
+      </view>
+      <view class="txt">
+        <view wx:if="{{item.content.length > 17}}">
+        {{item.content[0]+item.content[1]+item.content[2]+item.content[3]+item.content[4]+item.content[5]+item.content[6]+item.content[7]+item.content[8]+item.content[9]+item.content[10]+item.content[11]+item.content[12]+item.content[13]+item.content[14]+item.content[15]+item.content[16]+item.content[17]}}..
+        </view>
+        <view wx:else>{{item.content}}</view>
+      </view>
+      <view class="box-2">
+          <navigator class="like"><image src="/images/like.png"  mode="widthFix"></image>{{item.like}}</navigator>
+          <navigator class="comment"><image src="/images/comment.png" mode="widthFix"></image>{{item.comment}}</navigator>
+        </view>
+    </view>
+  </view>
+
+       <!-- 文章发表按钮 -->
+  <navigator class="round-click" url="../../pages/addBk/addBk">
+    <image src="/images/create2.png" bindtap="#" mode="widthFix"></image>
+  </navigator>
+</van-tab>
+</van-tabs>

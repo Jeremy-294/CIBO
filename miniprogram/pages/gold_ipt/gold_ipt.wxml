@@ -1,0 +1,57 @@
+<!-- title -->
+<view class="tit">目标与现况</view>
+<!-- 输入框 -->
+<form bindsubmit="btnSub">
+  <van-cell-group>
+    <van-field
+      value="{{ goldGpa }}"
+      required
+      clearable
+      border="{{false}}"
+      size="large"
+      label="目标GPA"
+      placeholder="请输入目标GPA"
+      bind:change="GoldGpa"
+    />
+    <van-field
+      value="{{ goldFen }}"
+      required
+      clearable
+      border="{{false}}"
+      size="large"
+      label="目标综测总分"
+      placeholder="请输入目标综测分值"
+      bind:change="GoldFen"
+    />
+    <van-field
+      value="{{ nowGpa }}"
+      required
+      clearable
+      border="{{false}}"
+      size="large"
+      label="当前GPA"
+      placeholder="请输入当前GPA"
+      bind:change="NowGpa"
+    />
+    <van-field
+      value="{{ nowFen }}"
+      required
+      clearable
+      border="{{false}}"
+      size="large"
+      label="当前综测总分"
+      placeholder="请输入当前综测分值"
+      bind:change="NowFen"
+    />
+    </van-cell-group>
+    <text>\n\n</text>
+    <!-- 提交按钮 -->
+    <view class="btn">
+      <van-button  size="large" form-type="submit" bindtap="updateData"
+      round color="#64A6D6" >提交</van-button>
+    </view>
+</form>
+
+
+
+

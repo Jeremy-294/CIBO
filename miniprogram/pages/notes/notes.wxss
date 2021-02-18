@@ -1,0 +1,49 @@
+page{
+  background: rgb(239,241,244);
+}
+.card-1{
+  background: white;
+  margin: 40rpx 25rpx 0;
+  padding: 0 10rpx;
+  border-radius: 18rpx;
+}
+.card-3{
+  background: white;
+  align-items: center;
+  margin: 40rpx 25rpx;
+  padding: 35rpx 0;
+  border-radius: 18rpx;
+}
+.title{
+  padding-left: 25rpx;
+  font-size: 35rpx;
+}
+.card-3 .van-radio{
+  padding: 15rpx 25rpx 30rpx;
+  font-size: 30rpx;
+  color: #888888;
+}
+.van-divider{
+  text-align: center;
+  padding:0 25rpx;
+  box-sizing: border-box;
+}
+.card-4{
+  background: white;
+  align-items: center;
+  margin: 40rpx 25rpx;
+  padding: 35rpx 0;
+  border-radius: 18rpx;
+}
+.card-4 .van-uploader{
+  padding: 30rpx;
+}
+.Btn{
+  width: 400rpx;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 30rpx;
+  margin-bottom: 70rpx;
+}
+

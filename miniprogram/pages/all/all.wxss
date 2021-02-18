@@ -1,0 +1,103 @@
+page{
+  background: rgb(100,166,214);
+  background-image: url("https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/bg.png?sign=77047b75c507e624e2492a3dc433e6e9&t=1596860760");
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+#tips{
+  text-align: center;
+  color: #64A6a1;
+  font-weight: 800;
+  background: white;
+  width: 700rpx;
+  height: 100rpx;
+  align-items: center;
+  border-radius: 30rpx;
+  font-size: 40rpx;
+  margin:0 25rpx;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.card-1{
+  background: white;
+  text-align: center;
+  align-items: center;
+  margin: 30rpx 25rpx  40rpx;
+  padding: 40rpx 0;
+  border-radius: 18rpx;
+  /* box-shadow: 0rpx 7rpx 8rpx  rgb(195, 191, 191); */
+  font-size: 35rpx;
+  color: rgb(100,100,100);
+}
+.card-1 text{
+  color: rgb(100,166,214);
+  font-size: 45rpx;
+}
+.card-1 .tips{
+  color: #f44;
+  font-size: 30rpx;
+  text-align: center;
+  padding-top: 20rpx;
+}
+.van-swipe-cell__left {
+  display: inline-block;
+  width: 70px;
+  height: 180rpx;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background-color: #64A6a1;
+  padding-top:32px ;
+  /* box-sizing: border-box; */
+  /* box-shadow: 0rpx 4rpx 8rpx rgb(220, 219, 219); */
+}
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  height: 180rpx;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+  padding-top:32px ;
+  /* box-sizing: border-box; */
+  /* box-shadow: 0rpx 4rpx 8rpx rgb(220, 219, 219); */
+}
+.van-swipe-cell{
+  height: 180rpx;
+  background: white;
+  text-align: left;
+  align-items: center;
+  margin: 40rpx;
+  border-radius: 18rpx;
+  /* box-shadow: 0rpx 4rpx 8rpx  rgb(220, 219, 219); */
+  color: rgb(100,100,100);
+}
+.tit{
+  font-size: 32rpx;
+  line-height: 50rpx;
+}
+.time{
+  padding-top: 25rpx;
+  font-size: 28rpx;
+  color: rgb(145,145, 145);
+}
+.van-cell-group{
+  display: flex;
+  justify-content: left;
+  padding: 34rpx 0;
+  box-sizing: border-box;
+}
+.index{
+  padding-left: 50rpx;
+  align-items: center;
+  font-size: 44rpx;
+  padding-top: 20rpx;
+}
+.box{
+  text-align: left;
+  padding-left: 70rpx;
+}
+.swiper{
+  height: 1000rpx;
+}

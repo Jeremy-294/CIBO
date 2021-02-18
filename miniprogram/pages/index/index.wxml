@@ -1,0 +1,82 @@
+<!-- logo -->
+<view class="logo"><image src="https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/logo.png?sign=1e65559eee3bf9d136113837551802ac&t=1596858227" mode="widthFix"></image></view>
+
+<!-- 新建加分项 -->
+<view class="card-1" url="/pages/index/index">
+  <view class="time">
+    <view>{{time[0]}}-{{time[1]}}-{{time[2]}} {{weekday}}</view>
+    <view>Hi ~</view>
+  </view>
+  <van-divider hairline />
+  <navigator class="new_notes"  url="/pages/notes/notes">新建综测加分项</navigator> 
+</view>
+
+<!-- 目标与当前 -->
+<view class="card-2">
+<!-- title -->
+  <view class="box-1">
+    <view class="title">Golds</view>
+    <navigator class="more" url="/pages/gold_ipt/gold_ipt">修改</navigator> 
+  </view>
+  <van-divider hairline />
+   <!-- main -->
+   <view class="box">
+      <!-- 目标 -->
+      <view class="gold">
+        <view class="tit">我的目标</view>
+        <view class="txt">
+          <view>GPA: {{dataArr[dataArr.length-1].goldGpa}}</view>
+          <view>综测总分: {{dataArr[dataArr.length-1].goldFen}}</view>   
+        </view>
+      </view>
+      <!-- 现状 -->
+      <view class="now">
+        <view class="tit">当前情况</view>
+        <view class="txt">
+          <view>GPA: {{dataArr[dataArr.length-1].nowGpa}}</view> 
+          <view>综测总分: {{dataArr[dataArr.length-1].nowFen}}</view>
+          <!-- tips -->
+          <view class="tips">
+            <text>生活就像海洋\n只有意志坚强的人才能到达彼岸</text>
+          </view>
+        </view>
+      </view>
+  
+   </view>
+</view>
+
+
+
+<!-- 近期记录展示 -->
+<view class="card-3">
+<!-- title -->
+  <view class="box">
+    <view class="title">近期记录</view>
+    <view class="more" bindtap="ToAll">更多</view> 
+  </view>
+  <van-divider hairline />
+  <!-- main -->
+  <view class="main">
+    <view class="tit">{{dataArr2[dataArr2.length-1].title}}</view>
+    <view class="time">{{dataArr2[dataArr2.length-1].time}} {{dataArr2[dataArr2.length-1].lei}} {{dataArr2[dataArr2.length-1].fen}}</view>
+    <!-- <van-divider hairline /> -->
+  </view>
+
+  <view class="main">
+    <view class="tit">{{dataArr2[dataArr2.length-2].title}}</view>
+    <view class="time">{{dataArr2[dataArr2.length-2].time}} {{dataArr2[dataArr2.length-2].lei}} {{dataArr2[dataArr2.length-2].fen}}</view>
+    <!-- <van-divider hairline /> -->
+  </view>
+
+  <view class="main">
+    <view class="tit">{{dataArr2[dataArr2.length-3].title}}</view>
+    <view class="time">{{dataArr2[dataArr2.length-3].time}} {{dataArr2[dataArr2.length-3].lei}} {{dataArr2[dataArr2.length-3].fen}}</view>
+    <!-- <van-divider hairline /> -->
+  </view>
+
+  <view class="main">
+    <view class="tit">{{dataArr2[dataArr2.length-4].title}}</view>
+    <view class="time">{{dataArr2[dataArr2.length-4].time}} {{dataArr2[dataArr2.length-4].lei}} {{dataArr2[dataArr2.length-4].fen}}</view>
+  </view>
+
+</view>

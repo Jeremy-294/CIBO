@@ -1,0 +1,28 @@
+page{
+  background:rgb(239,241,244);
+}
+.card{
+  height: 700rpx;
+  margin: 80rpx 25rpx;
+  background: white;
+  border-radius: 10rpx;
+  padding:20rpx;
+  box-shadow: 10rpx 10rpx 10rpx rgb(215, 215, 215);
+}
+.card .title{
+  padding-top: 40rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.card .main{
+  margin-top:70rpx; 
+  padding-left: 70rpx;
+  font-size: 35rpx;
+  line-height: 90rpx;
+  color: #666;
+}
+.btn{
+  width: 400rpx;
+  padding-top: 100rpx;
+  margin: auto;
+}

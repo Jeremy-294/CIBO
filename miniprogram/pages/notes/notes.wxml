@@ -1,0 +1,80 @@
+ <!-- title -->
+ <view class="card-1">
+  <van-cell-group >
+      <van-field 
+        value="{{ title }}"
+        required
+        clearable
+        size="large"
+        border="{{ false }}"
+        label="标题"
+        icon="question-o"
+        placeholder="请输入加分项的标题"
+        bind:change="Title"
+        bind:click-icon="onClickIcon"
+      />
+    
+      <!-- 活动加几分 -->
+      <van-field 
+        value="{{ fen }}"
+        required
+        clearable
+        size="large"
+        label="分值"
+        placeholder="请输入加分项的加分值"
+        bind:change="Fen"
+        border="{{ false }}"
+      />
+      <!-- 活动类别/德育/智育/体育 -->
+      <van-field 
+        value="{{ lei }}"
+        required
+        clearable
+        size="large"
+        label="类别"
+        placeholder="请输入加分项的类别"
+        bind:change="Lei"
+        border="{{ false }}"
+      />
+
+      <!-- 备注 --> 
+      <van-field 
+        value="{{ ps }}"
+        clearable
+        size="large"
+        label="备注"
+        icon="question-o"
+        placeholder="请输入备注"
+        bind:change="Ps"
+        border="{{ false }}"
+      />
+  </van-cell-group>
+</view>
+
+ <!-- 活动校内/校外？单选框 -->
+<view class="card-3">
+    <view class="title">加分来源</view>
+    <van-divider hairline />
+    <van-radio-group value="{{ radio }}" bind:change="raido">
+      <van-radio name="校内活动">校内</van-radio>
+      <van-radio name="校外活动">校外</van-radio>
+    </van-radio-group>
+</view>
+
+
+
+<!-- 上传活动证明图片 -->
+<view class="card-4">
+  <view class="title">活动证明</view>
+  <van-divider hairline />
+  <van-uploader file-list="{{ fileList }}" max-count="9" deletable="{{ true }}"  bind:after-read="afterRead" />
+</view>
+
+
+
+<!-- 提交按钮 -->
+<view class="Btn">
+  <van-button  round  size="large" form-type="submit" bindtap="subBtn" 
+  color="#64A6D6">提交</van-button>
+</view>
+

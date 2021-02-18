@@ -1,0 +1,31 @@
+<view class="card-1">
+  <view>
+  您一共有 <text>{{dataArr.length}}</text> 条记录，总计 <text>{{dataArr.length*3}}</text> 分
+  </view>
+  <view class="tips">左右滑动对应查看删除</view>
+</view>
+
+
+<view wx:if="{{dataArr.length==0}}">
+      <view id="tips">您还没有数据！快去首页创建吧！</view>
+</view>
+<view wx:else>
+<!-- 所有记录 -->
+<van-swipe-cell wx:for="{{dataArr}}" wx:key="index"
+  id="swipe-cell"
+  right-width="{{ 65 }}"
+  left-width="{{ 65 }}"
+  async-close
+  bind:close="onClose"
+>
+  <view slot="left" bindtap="look" id="{{item._id}}">查看</view>
+  <van-cell-group>
+    <view class="index">{{index+1}}</view> 
+    <view class="box">
+      <view class="tit">{{item.title}}</view>
+      <view class="time">{{item.time}} {{item.lei}} {{item.fen}}</view>
+    </view>
+  </van-cell-group>
+  <view slot="right" bindtap="remove" id="{{item._id}}">删除</view>
+</van-swipe-cell>
+  </view>

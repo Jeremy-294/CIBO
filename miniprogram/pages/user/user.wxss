@@ -1,0 +1,180 @@
+.logo{
+  margin-left: 25rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+.logo image{
+  width: 130rpx;
+}
+/* 用户授权 */
+.userinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  /* align-items: center; */
+}
+.userinfo button{
+  margin-top: 20rpx;
+  margin-right: 100rpx;
+  color: white;
+  background-color: rgb(100,166,214);
+  width: 250rpx;
+  height: 80rpx;
+  font-size:30rpx ;
+  font-weight: 800;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: rgb(33,23,17);
+}
+/* 页面背景 */
+page{
+  background: rgb(239,241,244);
+  /* background-image: url("https://6561-eahay-sahki-1302738281.tcb.qcloud.la/%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2/1.png?sign=fb6dee073654afcbffeeb5142951ea14&t=1596268979");
+  background-size: 100%;
+  background-repeat: no-repeat; */
+}
+.card-1{
+  background: white;
+  text-align: center;
+  align-items: center;
+  margin: 0 10rpx;
+  padding: 17rpx 0 ;
+  border-radius: 9rpx;
+  /* box-shadow: 0rpx 4rpx 8rpx rgb(227, 227, 227); */
+}
+.card-1 .van-divider{
+  text-align: center;
+  padding:0 25rpx;
+  box-sizing: border-box;
+}
+.title{
+  padding-left: 30rpx;
+  color: rgb(33,23,17); 
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}
+.main{
+  height: 190rpx;
+  margin: 40rpx 0;
+  text-align: center;
+  align-items: center;
+}
+.card-2{
+  height: 100%;
+  background: white;
+  align-items: center;
+  margin: 0 10rpx;
+  padding: 0 50rpx;
+  border-radius: 9rpx;
+  /* box-shadow: 0rpx 4rpx 10rpx 7rpx rgb(231,231,231); */
+  display: flex;
+  justify-content: space-between;
+}
+.card-2 image{
+  width: 120rpx;
+}
+.card-2 view{
+  font-size: 32rpx;
+  padding-right: 40rpx;
+}
+#t1{color: rgb(255,149,0);}
+#t2{color: rgb(0,213,213);}
+#t3{color: rgb(176, 183, 158);}
+.card-3{
+  background: white;
+  align-items: center;
+  margin: 40rpx 35rpx 40rpx;
+  padding: 30rpx 0 40rpx;
+  border-radius: 18rpx;
+  box-shadow: 0rpx 2rpx 10rpx 7rpx rgb(231,231,231);
+}
+.card-3 .box{
+  padding-left: 50rpx;
+}
+.card-3 .box .gold .tit{
+  margin: 20rpx 0;
+  position: relative;
+}
+.card-3 .box .gold .tit::before{
+  display: block;
+  width: 7rpx;
+  height: 40rpx;
+  background:rgb(100,166,214);
+  border:1rpx solid rgb(100,166,214);
+  content: "";
+  position: absolute;
+  left: -27rpx;
+  top: 50%;
+  margin-top: -20rpx;
+  border-radius: 25rpx;
+}
+.card-3 .box .now .tit{
+  margin: 20rpx 0 ;
+  position: relative;
+}
+.card-3 .box .now .tit::before{
+  display: block;
+  width: 7rpx;
+  height: 40rpx;
+  background:rgb(100,166,214);
+  border:1rpx solid rgb(100,166,214);
+  content: "";
+  position: absolute;
+  left: -27rpx;
+  top: 50%;
+  margin-top: -20rpx;
+  border-radius: 25rpx;
+}
+.card-3 .txt{
+  padding: 10rpx 0 5rpx 20rpx;
+}
+.card-3 .txt view{
+  margin-bottom: 17rpx;
+  font-size: 32rpx;
+  color: rgb(27, 27, 27);
+}
+.card-3 .txt text{
+  color: rgb(100,166,214);
+}
+#tips{
+  padding-top: 10rpx;
+  font-size: 31rpx;
+  color: #666;
+}
+.kefu{
+  position: relative;
+}
+.kefu .btn{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.card-3 .txt .box-1{
+  display: flex;
+}
+#kefu{
+  padding-left: 10rpx;
+}
+.bottom-box{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+}
+.bottom-box navigator{
+ color: rgb(100,166,214);
+}
+.bottom-box view{
+  padding: 0 10rpx;
+}

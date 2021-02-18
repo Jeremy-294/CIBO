@@ -1,0 +1,13 @@
+<view class="container"> 
+  <view class="avatarUrl"><image src="{{data.avatarUrl}}"></image></view>
+  <view class="title">{{data.title}}</view>
+  <view class="content">{{data.content}}</view>
+  <view class="box1">
+    <view class="author">作者：{{data.author}}</view>
+    <view class="time">发布时间：{{data.time}}</view>
+  </view>
+  <view class="box2">
+    <view class="x"><image src="../../images/comment.png"></image>评论</view>
+    <view class="x"><image src="../../images/like.png"></image>点赞</view>
+  </view>
+</view>

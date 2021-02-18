@@ -1,0 +1,32 @@
+<view class="tit">发表新文章</view>
+
+<van-cell-group >
+  <van-field 
+    value="{{ title }}"
+    clearable
+    size="large"
+    label="标题"
+    border="{{false}}"
+    placeholder="请输入文章标题"
+    bind:change="title"
+  />
+
+  <van-field
+    value="{{ message }}"
+    label="内容"
+    type="textarea"
+    placeholder="请输入文章内容"
+    autosize
+    clearable
+    size="large"
+    border="{{ false }}"
+    bind:change="content"
+  />
+</van-cell-group>
+
+<view class="btn">
+  <van-button size="large" round  type="primary" hairline color="#64A6D6" 
+  bindtap="subBtn">发布</van-button>
+</view>
+
+

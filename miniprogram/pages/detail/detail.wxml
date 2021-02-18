@@ -1,0 +1,15 @@
+<view class="card">
+  <view class="title">{{dataArr.title}}</view>
+  <view class="main">
+    <view><van-icon name="star" /> 活动加分：{{dataArr.fen}}分</view>
+    <view><van-icon name="award" /> 活动分类：{{dataArr.lei}}</view>
+    <view><van-icon name="map-marked" /> 校内/校外：{{dataArr.radio}}</view>
+    <view><van-icon name="comment" /> 备注：{{dataArr.ps}}</view>
+    <view><van-icon name="eye"/> 创建时间：{{dataArr.time}}</view>
+  </view>
+</view>
+
+<!-- 提交修改按钮 -->
+<view class="btn">
+  <van-button color="#64A6D6" size="large" round bindtap="ToUpdate" id="{{dataArr._id}}">修改</van-button>
+</view>

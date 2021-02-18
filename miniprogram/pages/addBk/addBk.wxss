@@ -1,0 +1,16 @@
+page{
+  background: #F7F8FA;
+}
+.van-cell-group{
+  border-radius: 10rpx;
+}
+.tit{
+  color: #b3b3b3;
+  font-size: 32rpx;
+  margin: 60rpx 38rpx 40rpx;
+}
+.btn{
+  width: 400rpx;
+  padding-top: 500rpx;
+  margin: auto;
+}
