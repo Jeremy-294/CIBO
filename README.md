@@ -9,12 +9,7 @@
 
 ### 🐱 页面介绍
 
-![image-20210218162935989](C:\Users\bnkj\AppData\Roaming\Typora\typora-user-images\image-20210218162935989.png)
-
-![image-20210218162953532](C:\Users\bnkj\AppData\Roaming\Typora\typora-user-images\image-20210218162953532.png)
-
-![image-20210218163003775](C:\Users\bnkj\AppData\Roaming\Typora\typora-user-images\image-20210218163003775.png)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210218163633697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzY0ODAxNw==,size_16,color_FFFFFF,t_70)
 
 
 <center>🐱CIBO之前名称为综测宝，现以更正为CIBO<center/>
